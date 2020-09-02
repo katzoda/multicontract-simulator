@@ -1,0 +1,220 @@
+
+
+/**********************************************
+*** GENERAL
+**********************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+.right { float: right; }
+
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+.top {
+    height: 40vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(MNQ.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.balance {
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.balance__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.balance__value {
+    font-weight: 300;
+    font-size: 46px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.balance__income,
+.balance__expenses {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+.balance__income {
+    margin-bottom: 10px;
+    background-color: #28B9B5;
+}
+
+.balance__expenses {
+    background-color: #FF5049;
+}
+
+.balance__income--text,
+.balance__expenses--text {
+    float: left;
+    font-size: 13px;
+    color: #444;
+    margin-top: 2px;
+}
+
+.balance__income--value,
+.balance__expenses--value {
+    letter-spacing: 1px;
+    float: left;
+}
+
+.balance__income--percentage,
+.balance__expenses--percentage {
+    float: left;
+    width: 34px;
+    font-size: 11px;
+    padding: 3px 0;
+    margin-left: 10px;
+}
+
+
+/**********************************************
+*** BOTTOM PART
+**********************************************/
+
+
+.btn-run-calc {
+    position: relative;
+    top: 5px;
+    margin-left: 20px;
+    color: #28B9B5;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-run-calc.reset {
+    color: #FF5049;
+}
+
+.btn-run-calc:hover { font-weight: 600; }
+.btn-run-calc:hover i { margin-right: 20px; }
+
+.btn-run-calc:focus {
+    outline: none;
+}
+
+.btn-run-calc:active { transform: translateY(2px); }
+
+.bottom, .bottom__pt {
+    position: relative;
+}
+
+.add {
+    padding: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
+}
+
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add__contracts, .add__pt, .add__win_percentage,
+.add__value {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 12px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add__contracts { width: 130px;}
+.add__pt { width: 70px;}
+.add__win_percentage { width: 110px;}
+.add__value { width: 170px;}
+
+.add__btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #28B9B5;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.add__btn:active { transform: translateY(2px); }
+
+.add__type:focus,
+.add__contracts:focus,
+.add__pt:focus,
+.add__win_percentage:focus,
+.add__value:focus {
+    outline: none;
+    border: 1px solid #28B9B5;
+}
+
+.add__btn:focus { outline: none; }
+
+
+
+.expenses .item__value,
+.expenses .item__percentage,
+.expenses .item__delete--btn {
+    color: #FF5049;
+}
+
+.item__delete--btn {
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: #FF5049;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.1;
+    margin-left: 10px;
+}
+
+.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(2px); }
+
+.item:hover .item__delete--btn { display: block; }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="mm_style.css">
+
+    <!-- Bootstrap Scripts -->
+    <!-- Optional JavaScript -->
+    <!-- <script type="text/javascript" href="/Users/dankat/Documents/PROGRAMMING/Web Development/jquerry.js"></script> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+    <title>MultiContractSim</title>
+</head>
+
+<body>
+    <div class="top">
+        <div class="balance">
+            <h2 class="balance__title">MultiContract Money Management Simulator</h2>
+            <div class="balance__title">
+                Calculated Account Balance:
+            </div>
+
+            <div class="balance__value">+ 2,345.64</div>
+
+            <div class="balance__income clearfix">
+                <div class="balance__income--text">Profit</div>
+                <div class="right">
+                    <div class="balance__income--value">+ 4,300.00</div>
+                    <div class="balance__income--percentage">&nbsp;</div>
+                </div>
+            </div>
+
+            <div class="balance__expenses clearfix">
+                <div class="balance__expenses--text">Loss</div>
+                <div class="right clearfix">
+                    <div class="balance__expenses--value">- 1,954.36</div>
+                    <div class="balance__expenses--percentage">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <div class="add">
+            <div class="add__container">
+                <input type="number" class="add__contracts contract" placeholder="Contracts">
+                <input type="number" class="add__contracts trade" placeholder="Trades">
+                <input type="number" class="add__contracts commission" placeholder="Commission">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                <button class="btn-run-calc"><i class="ion-ios-loop"></i>Run</button>
+                <button class="btn-run-calc reset"><i class="ion-ios-loop"></i>Reset</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom__pt">
+        <!-- <div class="add add_pt_container">
+            <div class="add__container">
+                <h2>Enter the value in desired Currency:</h2>
+                <input type="number" class="add__pt" placeholder="PT1">
+                <input type="number" class="add__pt" placeholder="PT2">
+                <input type="number" class="add__pt" placeholder="PT3">
+                <input type="number" class="add__value stop-loss" placeholder="Stop Loss/Contract">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div> -->
+    </div>
+    <div class="bottom__win_percentage">
+        <!-- <div class="add add_win_pt_container">
+            <div class="add__container">
+                <h2>Enter the Win% for individual Profit Targets:</h2>
+                <input type="number" class="add__win_percentage" placeholder="Win%PT1">
+                <input type="number" class="add__win_percentage" placeholder="Win%PT2">
+                <input type="number" class="add__win_percentage" placeholder="Win%PT3">
+                <button class="add__btn"><i class="ion-ios-checkmark-outline"></i></button>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="container statistics">
+        <!-- <div class="row row-top-desc">
+            <div class="col-sm">
+
+            </div>
+            <div class="col-sm">
+                Value
+            </div>
+            <div class="col-sm">
+                Win%
+            </div>
+            <div class="col-sm">
+                Profit
+            </div>
+            <div class="col-sm">
+                Loss
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                PT1
+            </div>
+            <div class="col-sm">
+                7.5
+            </div>
+            <div class="col-sm">
+                65%
+            </div>
+            <div class="col-sm">
+                770
+            </div>
+            <div class="col-sm">
+                -500
+            </div>
+        </div> -->
+    </div>
+
+    <script type="text/javascript" src="mm_simulator.js"></script>
+</body>
+
+</html>
